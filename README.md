@@ -46,11 +46,33 @@ Before running the code, make sure you have the following dependencies installed
 pip install -r requirements.txt
 ```
 
-Prior to running ```main_benchmarking.py```, API keys for OpenAI  need to obtained and included in the ```submit_batch_to_openai.py```. These can be applied for through their official platforms.
+### Complexity Metrics for Readability of Reported Causality
 
-### Running the Code
-
-Run the following to submit a batch file for a certain benchmarking task (e.g., CCR position) following a specific prompting strategy (e.g., causal graph encoded using GraphML, third prompt) to OpenAI:
+Run the following to **obtain the complexity measurements** for all statements in ClimateCause:
 
 ```bash
-python main_benchmarking.py --preprocess_files=True --submit_to_openai=True --task="CCR_position" --prompting_strategy="_ML_6"```
+python complexity_classes.py
+```
+
+### Benchmarking: Correlation Inference and Causal Chain Reasoning
+
+Prior to running ```main_benchmarking.py```, API keys for OpenAI  need to obtained and included in the ```submit_batch_to_openai.py```. These can be applied for through their official platforms.
+
+Run the following to **submit** a batch file for a certain benchmarking task (e.g., CCR position) following a specific prompting variation (e.g., causal graph encoded using GraphML, third prompt) to OpenAI:
+
+```bash
+python main_benchmarking.py --preprocess_files=True --submit_to_openai=True --task="CCR_position" --prompting_strategy="_ML_6"
+```
+
+Run the following to **retrieve** a batch file for a certain benchmarking task (e.g., CCR position) following a specific prompting variation (e.g., causal graph encoded using GraphML, third prompt) from OpenAI (using a batch id) and obtain precision/recall/F1 performace results:
+
+```bash
+python main_benchmarking.py --postprocess_files=True --openai_batch_id="batch_123" --task="CCR_position" --prompting_strategy="_ML_6"
+```
+
+Once the results of all three prompt variations (e.g., "_ML_6") of a specific prompt strategy (e.g., "ML") for a benchmarking task (e.g., CCR position) are processed and saved to their respective results file, run the following to **compile the full results** (mean and standard deviation):
+
+```bash
+python main_benchmarking.py --compile_full_results=True
+```
+
