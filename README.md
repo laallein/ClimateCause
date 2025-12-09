@@ -34,7 +34,7 @@ column | type | description
 `CORRELATION` | str | Binary label (positive/negative) whether correlation is positive (increase → increase) or negative (increase → decrease)
 `ABBREVIATIONS` | str | Set of abbreviations used in the statement resolved to their full meaning
 
-## Benchmarking: Correlation Inference and Causal Chain Reasoning
+## Code
 
 ### Requirements
 
