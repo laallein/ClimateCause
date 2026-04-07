@@ -6,7 +6,7 @@ This folder contains the ClimateCause dataset, complexity metrics to measure the
 
 Please, cite the following paper when making use of the ClimateCause dataset or the accompanying software:
 
-Liesbeth Allein, Nataly Pineda-Castañeda, Andrea Rocci, and Marie-Francine Moens (2026). *ClimateCause: Complex and Implicit Causal Structures in Climate Change Reports*. In *Findings of the Association for Computational Linguistics: ACL 2026*, San Diego, United States of America. Association for Computational Linguistics. (accepted, to appear)
+Liesbeth Allein, Nataly Pineda-Castañeda, Andrea Rocci, and Marie-Francine Moens (2026). ClimateCause: Complex and Implicit Causal Structures in Climate Change Reports. In *Findings of the Association for Computational Linguistics: ACL 2026*, San Diego, United States of America. Association for Computational Linguistics. (accepted, to appear)
 
 ## ClimateCause Dataset
 
