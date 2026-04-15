@@ -10,7 +10,7 @@ def parse_args():
     parser.add_argument('--compile_full_results', type=bool, default=False, help="If true, the results for all benchmark tests are compiled and shown in terminal")
     parser.add_argument('--perform_error_analysis', type=bool, default=True, help="If true, performs error analysis on the performance results")
 
-    parser.add_argument('--openai_batch_id', type=str, default="batch_6929a8520e648190a257f2b31afa629b")
+    parser.add_argument('--openai_batch_id', type=str, default="")
     parser.add_argument("--task", type=str, default="CCR_ECI_position", choices=[
                                                                              "CorrI", "CorrI_RC",
                                                                              "CCR_member", "CCR_position",
